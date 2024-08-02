@@ -14,7 +14,6 @@ export default function Home() {
          <About id="about"/>
          <Advantages id="shop"/>
          <Catalog id="catalog"/>
-         {/* <Formwapp id="formwapp"/> */}
          <Contacts id="contacts"/>
          <Footer id="footer"/>
       </>
