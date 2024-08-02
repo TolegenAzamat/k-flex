@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { BsChevronDoubleDown } from "react-icons/bs";
 import welcome_img from './../../../img/орнаменты.webp';
 import './welcome.css';
 
-const Welcome = (props) => {
-   const [isVisible, setIsVisible] = useState(false);
-
+const Welcome = () => {
    const { ref, inView } = useInView({
       triggerOnce: true,
       threshold: 0.1,
@@ -23,10 +20,6 @@ const Welcome = (props) => {
          }
       }
    };
-
-   useEffect(() => {
-      setIsVisible(true); // Показываем компонент с анимацией после загрузки
-   }, []);
 
    return (
       <motion.div 
