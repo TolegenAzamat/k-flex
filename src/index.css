@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
+
+
+/*Обнуление сайта*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+body{
+   font-family: 'Forum', serif;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 40px;
+   letter-spacing: 2px;
+   color: #0C0C0E;
+   user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+   margin: 0 30px;
 }
+
+dl, ol, ul {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.button{
+   font-family: 'Forum', serif;
+   background-color: #42aaff;
+   color: #fff;
+   padding: 10px 50px;
+   border-radius: 15px;
+   font-size: 20px;
+   transition: background-color 0.3s, transform 0.1s;
+}
+.button:hover{
+   background-color: #043761;
+}
+.button:active {
+   transform: scale(0.95);
+}
+
+.title2{
+   color: #0C0C0E;
+   font-size: 40px;
+   font-style: normal;
+   text-align: center;
+}
+
+.title2:after {
+   content: '';
+   width: 50px;
+   background-color: #0C0C0E;
+   height: 2px;
+   margin: 8px auto auto;
+   display: block;
+}
+
+
+
+/*Responsive*/
+
+/*Large: 992px-1199px*/
+@media (max-width: 1199px) {
+   .container{
+     max-width: 960px;
+     margin: 0 auto;
+   }
+ }
+ 
+ /*Medium: 768px-991px*/
+ @media (max-width: 991px) {
+   .container{
+     max-width: 720px;
+     text-align: center;
+     margin: 0 auto;
+   }
+   .title2{
+      font-size: 30px;
+   }
+   .button{
+      font-size: 17px;
+      padding: 7px 40px;
+   }
+ }
+ 
+ /*Small: 576px-767px*/
+ @media (max-width: 767px) {
+   .container{
+     max-width: 540px;
+   }
+   .button{
+      font-size: 15px;
+      padding: 5px 30px;
+   }
+   .title2{
+      font-size: 25px;
+   }
+ }
+ 
+ /*Extra small: 0px (320px) - 575px*/
+ @media (max-width: 575px) {
+   .container{
+     padding: 0 15px;
+   }
+   /* .title2{
+     font-size: 30px;
+   } */
+ }

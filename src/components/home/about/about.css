@@ -1,0 +1,136 @@
+/* About */
+
+.about{
+   margin-top: 50px;
+   padding-bottom: 20px;
+   height: 600px;
+   color: #000;
+}
+
+:root {
+   --gradient-width: 20%; /* Задайте ширину градиента здесь */
+}
+
+.about_box{
+   display: flex;
+   margin-top: 20px;
+   margin-bottom: 60px;
+   align-items: center;
+   min-width: 100%;
+   height: 500px;
+   background: linear-gradient(to right, white var(--gradient-width), rgba(255, 255, 255, 0) calc(var(--gradient-width) + 30%)), url('../../../img/banner1.jpg') no-repeat center center/cover;
+}
+
+.about_title{
+   color: #000;
+   font-size: 40px;
+   font-style: normal;
+   text-align: center;
+}
+
+.about_title:after {
+   content: '';
+   width: 50px;
+   background-color: #000;
+   height: 2px;
+   margin: 8px auto auto;
+   display: block;
+}
+
+.about_text{
+   text-align: left;
+   font-family: 'Inter', sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 40px; 
+   max-width: 500px;
+}
+
+.about_text h3{
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+.readmore_btn{
+   margin-top: 30px;
+   margin-left: 40px;
+}
+
+
+
+/*Responsive*/
+
+/*Large: 992px-1199px*/
+@media (max-width: 1199px) {
+   .container{
+      max-width: 960px;
+   }
+   
+}
+
+/*Medium: 768px-991px*/
+@media (max-width: 991px) {
+   .about{
+      height: 500px;
+   }
+   .container{
+      max-width: 720px;
+   }
+   .about_box{
+      height: 400px;
+      margin-bottom: 0;
+   }
+   .about_text{
+      font-size: 13px;
+      line-height: 30px;
+      max-width: 300px;
+   }
+   .about_text h3{
+      font-size: 20px;
+   }
+   .about_title{
+      font-size: 30px;
+   }
+}
+
+/*Small: 576px-767px*/
+@media (max-width: 767px) {
+   .container{
+       max-width: 540px;
+   }
+   .about{
+      height: 350px;
+   }
+   .about_box{
+      height: 270px;
+   }
+   .about_text{
+      line-height: 25px;
+      max-width: 200px;
+   }
+   :root {
+      --gradient-width: 30%; 
+   }
+   .readmore_btn{
+      margin-left: 0;
+   }
+   .about_title{
+      font-size: 25px;
+   }
+}
+
+/*Extra small: 0px (320px) - 575px*/
+@media (max-width: 575px) {
+   .container{
+       padding: 0 15px;
+   }
+   .about_box{
+      background-image: none;
+      justify-content: center;
+      text-align: center;
+   }
+   .about_text{
+      text-align: center;
+   }
+}

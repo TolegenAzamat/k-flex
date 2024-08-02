@@ -1,0 +1,136 @@
+/* Contacts */
+
+.contacts{
+   margin: 40px 0;
+}
+
+.contacts_title{
+   margin-bottom: 40px;
+}
+
+.contacts_box{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.contacts_info_title{
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.contacts_qr_title{
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.contacts_img{
+   text-align: center;
+}
+
+.contacts_img img{
+   max-width: 250px;
+}
+
+.contacts_info_phone{
+   margin-bottom: 40px;
+}
+
+.contacts_info_phone p{
+   margin-bottom: 20px;
+}
+
+.contacts_social{
+   margin-bottom: 10px;
+}
+
+.whatsapp{
+   color: #000;
+   font-size: 30px;
+   margin-right: 10px;
+   transition: transform 0.3s ease;
+}
+.whatsapp:hover {
+   transform: scale(1.35);
+}
+
+.inst{
+   color: #000;
+   font-size: 30px;
+   transition: transform 0.3s ease;
+}
+.inst:hover {
+   transform: scale(1.35);
+}
+
+
+
+/*Responsive*/
+
+/*Large: 992px-1199px*/
+@media (max-width: 1199px) {
+   .container{
+      max-width: 960px;
+   }
+}
+
+/*Medium: 768px-991px*/
+@media (max-width: 991px) {
+   .container{
+      max-width: 720px;
+   }
+   .contacts_box{
+      display: flex;
+      flex-direction: column;
+      font-size: 17px;
+   }
+   .contacts_img img{
+      height: 300px;
+      width: 300px;
+   }
+   .contacts_info_phone {
+      margin-bottom: 10px;
+   }
+   .contacts_info_title {
+      margin-bottom: 0;
+   }
+   .contacts_img {
+      margin-top: 10px;
+   }
+}
+
+/*Small: 576px-767px*/
+@media (max-width: 767px) {
+   .container{
+      max-width: 540px;
+   }
+   .contacts_img{
+      display: none;
+   }
+   .contacts_info_phone{
+      margin-bottom: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .contacts_info_phone p{
+      margin-bottom: 0px;
+      max-width: 240px;
+   }
+   .contacts_info_title{
+      max-width: 300px;
+   }
+}
+
+/*Extra small: 0px (320px) - 575px*/
+@media (max-width: 575px) {
+   .container{
+      padding: 0 15px;
+   }
+   .contacts_img img{
+      /* max-height: 200px;
+      min-width: 50px;
+      max-width: 200px; */
+   }
+}
