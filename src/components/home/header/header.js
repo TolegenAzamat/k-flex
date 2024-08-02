@@ -1,5 +1,4 @@
-import { VscAccount } from "react-icons/vsc";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import logo from './../../../img/логотип.png'
 import './header.css';
 

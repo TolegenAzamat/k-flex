@@ -5,7 +5,6 @@ import About from "../../components/home/about/about";
 import Advantages from "../../components/home/shop/shop";
 import Contacts from "../../components/home/contacts/contacts";
 import Footer  from "../../components/home/footer/footer";
-import Formwapp from "../../components/home/formwapp/fromwapp";
 import Catalog from "../../components/home/catalog/catalog";
 
 export default function Home() {

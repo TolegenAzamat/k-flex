@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './about.css';
-import img_1 from './../../../img/banner1.jpg'
 
 export default function About() {
    const { ref, inView } = useInView({
